@@ -1,0 +1,124 @@
+html, footer {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, Sans-serif;
+    background-color: black;
+  }
+  
+  .footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: black;
+    color: #ffff;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer .footer-col {
+    width: 190px;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 20px 20px;
+  }
+  
+  .footer .footer-col h3 {
+    margin: 0;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0 5px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+  }
+  
+  .footer .footer-col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer .footer-col ul li {
+    color: #999;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .footer .footer-col ul li:hover {
+    color: #ffc107;
+  }
+  
+  .footer-col i, .footer .social-icons {
+    font-size: 35px;
+  }
+  
+  .social ul li {
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .clearfix {
+    clear: both;
+  }
+  
+  .footer-bottom {
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-bottom-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: inline-flex;
+    gap: 15px;
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    .footer-container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media only screen and (max-width: 1139px) {
+    .footer-container .social {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .footer .footer-col {
+      width: 33%;
+    }
+    .footer .footer-col h3 {
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .footer .footer-col {
+      width: 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 340px) {
+    .footer .footer-col {
+      width: 100%;
+    }
+  }
+  

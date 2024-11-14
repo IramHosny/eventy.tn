@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
+
+:root {
+  /* Colors */
+  --brand-color: hsla(51, 97%, 50%, 0.918);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  /* Fonts */
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Lato", sans-serif;
+}
+
+/* RESET */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h2,
+p {
+  margin: 0;
+}
+
+/* GLOBAL STYLES */
+
+.colombia_card h2 {
+  font-size: 2.25rem;
+  font-family: var(--font-title);
+  color: var(--white);
+  line-height: 1.1;
+}
+
+.colombia_card p {
+  font-family: var(--font-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--white);
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+/* CARD COMPONENT */
+
+.colombia_card {
+  display: grid;
+  place-items: center;
+  width: 80vw;
+  max-width: 18rem;
+  height: 28.125rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+ 
+}
+
+.colombia_card > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  
+}
+
+.colombia_card__background {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.colombia_card__content {
+  --flow-space: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 55%;
+  width: 100%;
+  padding: 12% 1.25rem 1.875rem;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.3) 10%,
+    hsl(0, 0%, 0%) 100%
+  );
+
+  border-radius: 10px;
+}
+
+.colombia_card__content--container {
+  --flow-space: 1.25rem;
+}
+
+.colombia_card__title {
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+}
+
+.colombia_card__title::after {
+  content: "";
+  position: absolute;
+  height: 0.3125rem;
+  width: calc(100% + 1.25rem);
+  bottom: calc((1.25rem - 0.5rem) * -1);
+  left: -1.25rem;
+  background-color: var(--brand-color);
+}
+
+.colombia_card h4 {
+  padding: 0.75em 1.6em;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+  font-variant: small-caps;
+  font-weight: bold;
+  border-radius: 0.45em;
+  border: none;
+  background-color: var(--brand-color);
+  font-family: var(--font-title);
+  font-size: 1.125rem;
+  color: var(--black);
+}
+
+.colombia_card__button:focus {
+  outline: 2px solid black;
+  outline-offset: -5px;
+}
+
+@media (any-hover: hover) and (any-pointer: fine) {
+    .colombia_card__content {
+    transform: translateY(62%);
+    transition: transform 500ms ease-out;
+    transition-delay: 500ms;
+  }
+
+  .colombia_card__title::after {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1000ms ease-in, transform 500ms ease-out;
+    transition-delay: 500ms;
+    transform-origin: right;
+  }
+
+  .colombia_card__background {
+    transition: transform 500ms ease-in;
+  }
+
+  .colombia_card__content--container > :not(.colombia_card__title),
+  .colombia_card__button {
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+  }
+
+  .colombia_card__content--container > :not(.colombia_card__title) {
+    transition-delay: 1000ms;
+  }
+
+  .colombia_card__button {
+    transition-delay: 1500ms;
+  }
+
+  .colombia_card:hover,
+  .colombia_card:focus-within {
+    transform: scale(1.05);
+    transition: transform 500ms ease-in;
+  }
+
+  .colombia_card:hover .colombia_card__content,
+  .colombia_card:focus-within .colombia_card__content {
+    transform: translateY(0);
+    transition: transform 500ms ease-in;
+  }
+
+  .colombia_card:focus-within .colombia_card__content {
+    transition-duration: 0ms;
+  }
+
+  .colombia_card:hover .colombia_card__background,
+  .colombia_card:focus-within .colombia_card__background {
+    transform: scale(1.3);
+  }
+
+  .colombia_card:hover .colombia_card__content--container > :not(.colombia_card__title),
+  .colombia_card:hover .colombia_card__button,
+  .colombia_card:focus-within .colombia_card__content--container > :not(.colombia_card__title),
+  .colombia_card:focus-within .colombia_card__button {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+
+  .colombia_card:hover .colombia_card__title::after,
+  .colombia_card:focus-within .colombia_card__title::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition-delay: 500ms;
+  }
+}
+* {
+	box-sizing: border-box;
+}
+
+
+
+image {
+	display: block;
+	width: 100%;
+}
+
+h2 {
+	margin: 0;
+	font-size: 1.4rem;
+}
+
+.cta {
+	--shadowColor: 187 60% 40%;
+	display: flex;
+	background: hsl(187 70% 85%);
+	max-width: 50rem;
+	box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+	border-radius: 0.8rem;
+	overflow: hidden;
+	border: 0.5rem solid;
+    margin: 20px;
+    width: 600px;
+    height: 320px;
+}
+
+.cta .image {
+    background-size: cover;
+    height: 300px;
+}
+
+.cta__text-column {
+	padding: min(2rem, 5vw) min(2rem, 5vw) min(2.5rem, 5vw);
+	flex: 1 0 50%;
+}
+
+.cta__text-column > * + * {
+	margin: min(1.5rem, 2.5vw) 0 0 0;
+}
+.Vete_list{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 50px;
+}

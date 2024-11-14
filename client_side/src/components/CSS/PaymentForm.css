@@ -1,0 +1,77 @@
+/* PaymentForm.css */
+
+.pay_form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+}
+
+.pay_form form div {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.pay_form label {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.pay_form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.pay_form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.pay_form button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pay_form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.pay_form button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pay_form button[type="button"]:hover {
+    background-color: #c82333;
+}
+
+.pay_form p {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+}

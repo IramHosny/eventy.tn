@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+:root {
+  --remReset: 62.5%;
+}
+
+.subscribe {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  background-color: #ffc107;
+  background-image:none;
+  transition-property: margin;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition: background-image 2s smooth;
+  width: 100%;
+}
+.subscribe .login-container {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  transition-property: border-radius, height;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.subscribe .login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 42px 20px;
+  max-width: 310px;
+  margin: 0 auto;
+  text-align: center;
+}
+.subscribe .login-content p {
+  font-size: 1.1rem;
+  margin-top: 5rem;
+}
+.subscribe .login-content p strong {
+  color: #ffc107;
+}
+.subscribe .login-content_header {
+  text-align: center;
+}
+.subscribe .login-content_header span#logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.subscribe .login-content_header h2 {
+  font-size: 3.5rem;
+  line-height: 1;
+  margin: 25px 0;
+}
+.subscribe form {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe .login-form input {
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+.subscribe input {
+  border: 1px solid #ccc;
+  margin: 8px 0;
+}
+.subscribe input[type="submit"] {
+  border: none;
+  background-color: #ffc107;
+  color: #fffacd;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+.subscribe .login-netoworks {
+  margin-top: 2rem;
+}
+.subscribe .login-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+}
+.subscribe ul.login-icons li {
+  background-color: #cadd91;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+@media screen and (min-width: 400px) {
+    .subscribe  {
+  }
+  .subscribe .login-container {
+  }
+}
+@media screen and (min-width: 700px) {
+    .subscribe  {
+    background-color: #ffc107;
+    background-image: url("https://media.gettyimages.com/id/926602378/fr/photo/couple-de-jeunes-mari%C3%A9s-marchant-sur-l%C3%A9glise-et-de-c%C3%A9l%C3%A9bration-de-mariage-avec-des-confettis.jpg?s=612x612&w=0&k=20&c=azTr-In9NHVRieVbWFBVXPatJjltgDvOd8sypdAiC6A=");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    height:100vh;
+  }
+  .subscribe .login-container {
+    right: 20px;
+    max-width: 550px;
+    top:20px;
+  }
+}
